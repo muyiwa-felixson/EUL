@@ -1,0 +1,1 @@
+export const selectLoggedInUser = ({ users }) => users.user;

@@ -1,0 +1,80 @@
+{
+  "name": "EUL-Flows",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "~4.3.0",
+    "html5shiv": "~3.7.0",
+    "jquery": "~3.4.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "polished": "^4.0.3",
+    "popper.js": "~1.15.0",
+    "rc-pagination": "^3.1.2",
+    "react": "~17.0.1",
+    "react-cookie": "^4.0.3",
+    "react-dom": "~17.0.1",
+    "react-redux": "~7.2.1",
+    "react-router-dom": "~5.2.0",
+    "react-scripts": "^4.0.0",
+    "react-select": "^3.1.0",
+    "recharts": "^1.8.5",
+    "redux": "~4.0.5",
+    "redux-thunk": "~2.3.0",
+    "styled-components": "^5.2.1",
+    "whatwg-fetch": "~3.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.11.5",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.7",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-react-intl": "^2.0.6",
+    "eslint": "^7.14.0",
+    "eslint-plugin-react": "^7.21.5",
+    "nock": "^13.0.5",
+    "node-fetch": "^2.6.1",
+    "redux-devtools-extension": "~2.13.8",
+    "sass-lint": "^1.13.1",
+    "standard": "^15.0.0"
+  },
+  "scripts": {
+    "test-lint-js": "standard './apps/**/*.js*'",
+    "test-lint-scss": "sass-lint --verbose",
+    "test-lint": "npm run test-lint-scss && npm run test-lint-js",
+    "test-js": "jest --expand",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "sasslintConfig": "./conf/sass-lint.yml",
+  "standard": {
+    "verbose": true
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

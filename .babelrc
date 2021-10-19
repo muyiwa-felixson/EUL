@@ -1,0 +1,9 @@
+{
+    "presets": ["@babel/preset-react"],
+    "plugins": ["styled-components", "lodash"],
+    "env": {
+      "production": {
+        "plugins": [["styled-components", { "displayName": false }]]
+      }
+    }
+  }

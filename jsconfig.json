@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "module": "esnext",
+      "target": "es6",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": false,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "baseUrl": ".",
+      "checkJs": true,
+      "paths": {
+        "components/*": ["components/*"],
+        "assets/*": ["assets/*"],
+        "css/*": ["css/*"],
+        "img/*": ["img/*"],
+        "redux/*": ["redux/*"],
+        "utils/*": ["utils/*"]
+      }
+    },
+    "exclude": ["node_modules", "**/node_modules/*", "src/components/styledElements/*"]
+  }
+  
