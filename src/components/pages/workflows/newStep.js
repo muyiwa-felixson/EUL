@@ -1,7 +1,5 @@
 import React from 'react';
-import Roles from '../../../utils/roles';
-import { PhotoUploader } from '../../styledElements/general.style';
-import { Button, Modal, ModalBody, ModalFooter, Box, Grid, Text, Theme, Spacer, Input, Select, TextArea, Tabs, Switch, Checkbox } from '../../styledElements/lib';
+import { Button, Modal, ModalBody, ModalFooter, Box, Grid, Text, Spacer, Input, Select, TextArea, Tabs, Switch, Checkbox } from '../../styledElements/lib';
 
 
 const members = [

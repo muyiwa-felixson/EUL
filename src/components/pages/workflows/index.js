@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Box, Button, Grid, Input, Select, Spacer, Table, Text, Theme } from '../../styledElements/lib';
+import { Box, Button, Grid, Input, Spacer, Text } from '../../styledElements/lib';
 import { FlowBox } from '../../styledElements/workflow.style';
 
-const WorkFlows = props => {
+const WorkFlows = () => {
     return <Box>
     <Box height="100px" pad="25px 40px" bordered verticalAlign="flex-end">
         <Grid default="auto max-content">

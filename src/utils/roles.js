@@ -1,7 +1,8 @@
 const Roles = [
-    {name: "System Administrator", permissions: []},
-    {name: "Application Officer", permissions: []},
-    {name: "Monitoring Officer", permissions: []},
+    {label: "All", value: "All"},
+    {label: "System Administrator", value: "System Administrator", permissions: []},
+    {label: "Application Officer", value: "Application Officer", permissions: []},
+    {label: "Monitoring Officer", value: "Monitoring Officer", permissions: []},
 ]
 
 export default Roles;

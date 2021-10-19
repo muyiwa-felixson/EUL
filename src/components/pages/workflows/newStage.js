@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { transparentize } from 'polished';
 import { NavLink } from 'react-router-dom';
-import { Box, Button, Grid, Input, Select, Spacer, Table, Text, TextArea, Theme } from '../../styledElements/lib';
-import { Faces, FlowBox, StepBox } from '../../styledElements/workflow.style';
+import { Box, Button, Grid, Input, Spacer, Text, TextArea, Theme } from '../../styledElements/lib';
+import { Faces, StepBox } from '../../styledElements/workflow.style';
 import { ReturnButton } from '../../styledElements/general.style';
 import NewStep from './newStep';
 
-const Stage = props => {
+const Stage = () => {
     const [stepModal, setStepModal] = useState(false);
     return <Box>
         <Box minHeight="100px" pad="25px 40px 25px 0" bordered verticalAlign="flex-end">

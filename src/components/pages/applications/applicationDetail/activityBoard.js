@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import { Box, Button, Checkbox, Grid, Input, Select, Spacer, Table, Text, Theme } from '../../../styledElements/lib';
-import {transparentize} from 'polished';
+import { Box, Button, Grid, Spacer, Text, Theme } from '../../../styledElements/lib';
 import { Activity } from './style';
 
-const ActivityBoard = props => {
+const ActivityBoard = () => {
     const [pause, setPause] = useState(false);
     const [applicationList, setList] = useState({
         id: 1, name: "Application name", customer: "Sample Customer", startDate: "09 Nov 20", duration: "3 weeks", endDate: "30 Nov 20", workflowTemplate: "Device Acquisition", assignee: "Muyiwa", stages: [
@@ -48,7 +47,7 @@ const ActivityBoard = props => {
                     <Text bold block size="18px">Activity Board</Text>
                 </Box>
                 <Box align="right">
-                    <Button color={pause ? Theme.PrimaryGreyMid : Theme.PrimaryColor} iconLeft={pause ? <i className="flexibull-right-dir" /> : <Text>II</Text>}>{ pause ? "Continue" :"Pause"} Process</Button>
+                    <Button onClick={()=> setPause(!pause)} color={pause ? Theme.PrimaryGreyMid : Theme.PrimaryColor} iconLeft={pause ? <i className="flexibull-right-dir" /> : <Text>II</Text>}>{ pause ? "Continue" :"Pause"} Process</Button>
                 </Box>
             </Grid>
             <Spacer space="15px" />

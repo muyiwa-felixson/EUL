@@ -66,7 +66,7 @@ const ApplicationRow = props =>{
         </td></tr>
     </>
 }
-const Applications = props => {
+const Applications = () => {
     const [applicationList, setList] = useState([
         { id: 1, name: "Application name", customer: "Sample Customer", startDate: "09 Nov 20", duration: "3 weeks", endDate: "30 Nov 20", workflowTemplate: "Device Acquisition", assignee: "Muyiwa", stages: [
         {stageName: "Stage 1, Application Processing", steps: [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
@@ -86,6 +86,27 @@ const Applications = props => {
         {stageName: "Stage 3, Device Acquisition", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
         {stageName: "Stage 4, Application Finale", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]}
     ]}
+]);
+
+setList([
+    { id: 1, name: "Application name", customer: "Sample Customer", startDate: "09 Nov 20", duration: "3 weeks", endDate: "30 Nov 20", workflowTemplate: "Device Acquisition", assignee: "Muyiwa", stages: [
+    {stageName: "Stage 1, Application Processing", steps: [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
+    {stageName: "Stage 2, Client Review/Assessment", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}, {stepName: "step 3", status: false}, {stepName: "step 4", status: false}]},
+    {stageName: "Stage 3, Device Acquisition", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: false}, {stepName: "step 3", status: false}, {stepName: "step 4", status: false}]},
+    {stageName: "Stage 4, Application Finale", steps:  [{stepName: "step 1", status: false}, {stepName: "step 2", status: false}]}
+]},
+{ id: 2, name: "Application name", customer: "Sample Customer", startDate: "09 Nov 20", duration: "3 weeks", endDate: "30 Nov 20", workflowTemplate: "Device Acquisition", assignee: "Muyiwa", stages: [
+    {stageName: "Stage 1, Application Processing", steps: [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
+    {stageName: "Stage 2, Client Review/Assessment", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
+    {stageName: "Stage 3, Device Acquisition", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: false}]},
+    {stageName: "Stage 4, Application Finale", steps:  [{stepName: "step 1", status: false}, {stepName: "step 2", status: false}]}
+]},
+{ id: 3, name: "Application name", customer: "Sample Customer", startDate: "09 Nov 20", duration: "3 weeks", endDate: "30 Nov 20", workflowTemplate: "Device Acquisition", assignee: "Muyiwa", stages: [
+    {stageName: "Stage 1, Application Processing", steps: [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
+    {stageName: "Stage 2, Client Review/Assessment", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
+    {stageName: "Stage 3, Device Acquisition", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]},
+    {stageName: "Stage 4, Application Finale", steps:  [{stepName: "step 1", status: true}, {stepName: "step 2", status: true}]}
+]}
 ]);
     const [applicationModal, setApplicationModal] = useState(false);
     return <Box>

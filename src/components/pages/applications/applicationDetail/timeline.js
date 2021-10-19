@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
 import moment from 'moment';
-import { Box, Button, Checkbox, Grid, Input, Select, Spacer, Table, Text, Theme } from '../../../styledElements/lib';
-import {transparentize} from 'polished';
+import { Box, Text } from '../../../styledElements/lib';
 import { StageBar, WeekRender } from './style';
 
-const TimeLine = props => {
-    const [pause, setPause] = useState(false);
+const TimeLine = () => {
     const [applicationList, setList] = useState({
         id: 1, name: "Application name", status: 'complete', customer: "Sample Customer", startDate: "09 Nov 20", duration: "3 weeks", endDate: "30 Jan 21", workflowTemplate: "Device Acquisition", assignee: "Muyiwa", stages: [
         {stageName: "Stage 1, Application Processing", startDate: "10 Nov 20", endDate: "28 Nov 20", complete: 90, incomplete: 10, steps: [{id: 101, stepName: "step 1", dueDate: "22 Jun 2020", lag: -3, status: true, current: 'to do'}, {id: 102, stepName: "step 2", dueDate: "22 Jun 2020", lag: 3, status: true, current: 'to do'}]},
@@ -13,6 +11,15 @@ const TimeLine = props => {
         {stageName: "Stage 3, Device Acquisition", startDate: "15 Dec 20", endDate: "05 Jan 21", complete: 90, incomplete: 10, steps:  [{id: 106,stepName: "step 1", dueDate: "22 Jun 2020", lag: -3, status: false, current: 'to do'}, {id: 107,stepName: "step 2", dueDate: "22 Jun 2020", lag: -3, status: false, current: 'to do'}, {lag: 6, id: 108,stepName: "step 3", status: false, current: 'to do'}, {lag: 2, id: 115,stepName: "step 4", status: false, current: 'to do'}]},
         {stageName: "Stage 4, Application Finale", startDate: "05 Jan 21", endDate: "29 Jan 21", steps:  [{id: 109,stepName: "step 1", dueDate: "22 Jun 2020", lag: 3, status: false, current: 'to do'}, {id: 110,stepName: "step 2", dueDate: "22 Jun 2020", lag: 3, status: false, current: 'to do'}]}
         ]}
+);
+
+setList({
+    id: 1, name: "Application name", status: 'complete', customer: "Sample Customer", startDate: "09 Nov 20", duration: "3 weeks", endDate: "30 Jan 21", workflowTemplate: "Device Acquisition", assignee: "Muyiwa", stages: [
+    {stageName: "Stage 1, Application Processing", startDate: "10 Nov 20", endDate: "28 Nov 20", complete: 90, incomplete: 10, steps: [{id: 101, stepName: "step 1", dueDate: "22 Jun 2020", lag: -3, status: true, current: 'to do'}, {id: 102, stepName: "step 2", dueDate: "22 Jun 2020", lag: 3, status: true, current: 'to do'}]},
+    {stageName: "Stage 2, Client Review/Assessment", startDate: "20 Nov 20", endDate: "15 Dec 20", complete: 100, steps:  [{id: 103,stepName: "step 1", dueDate: "22 Jun 2020", lag: 3, status: true, current: 'to do'}, {id: 104,stepName: "step 2", dueDate: "22 Jun 2020", lag: -3, status: true, current: 'to do'}, {id: 114,stepName: "step 3", dueDate: "22 Jun 2020", lag: -3, status: false, current: 'to do'}, {lag: 2, id: 105,stepName: "step 4", status: false, current: 'to do'}]},
+    {stageName: "Stage 3, Device Acquisition", startDate: "15 Dec 20", endDate: "05 Jan 21", complete: 90, incomplete: 10, steps:  [{id: 106,stepName: "step 1", dueDate: "22 Jun 2020", lag: -3, status: false, current: 'to do'}, {id: 107,stepName: "step 2", dueDate: "22 Jun 2020", lag: -3, status: false, current: 'to do'}, {lag: 6, id: 108,stepName: "step 3", status: false, current: 'to do'}, {lag: 2, id: 115,stepName: "step 4", status: false, current: 'to do'}]},
+    {stageName: "Stage 4, Application Finale", startDate: "05 Jan 21", endDate: "29 Jan 21", steps:  [{id: 109,stepName: "step 1", dueDate: "22 Jun 2020", lag: 3, status: false, current: 'to do'}, {id: 110,stepName: "step 2", dueDate: "22 Jun 2020", lag: 3, status: false, current: 'to do'}]}
+    ]}
 );
 
 

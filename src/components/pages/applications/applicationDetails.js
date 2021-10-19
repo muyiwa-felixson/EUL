@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
-import { Box, Button, Checkbox, Grid, Input, Select, Spacer, Table, Text, Theme } from '../../styledElements/lib';
+import { Box, Button, Grid, Spacer, Text, Theme } from '../../styledElements/lib';
 import {transparentize} from 'polished';
 import ActivityBoard from './applicationDetail/activityBoard';
 import TimeLine from './applicationDetail/timeline';
 
 
-const ApplicationDetail = props => {
+const ApplicationDetail = () => {
     const [view, setView] = useState(1);
    
     return <Box>

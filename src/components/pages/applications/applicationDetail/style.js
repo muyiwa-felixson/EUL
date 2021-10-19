@@ -58,7 +58,7 @@ const ActivityWrapper = styled.div`
 
 export const Activity = props => {
     const [dragging, setDragging] = useState(false)
-    return <ActivityWrapper {...props} dragged={dragging} onDrag={e => setDragging(true)} onDrop={e => setDragging(false)} onDragEnd={e => setDragging(false)} lag={props.lag > 0 && props.color !== Theme.PrimaryGreen}>
+    return <ActivityWrapper {...props} dragged={dragging} onDrag={() => setDragging(true)} onDrop={() => setDragging(false)} onDragEnd={() => setDragging(false)} lag={props.lag > 0 && props.color !== Theme.PrimaryGreen}>
         <div className="griding">
             <div><strong>{props.stepName}</strong><Spacer space="10px" /><Text opacity={0.6}>Due Date:</Text> <Text color={props.color}>{props.dueDate}</Text></div>
             <Box align="right"><Text opacity={0.6}>Status</Text><Spacer space="10px" /><Text color={props.color}>{props.lag}</Text></Box>

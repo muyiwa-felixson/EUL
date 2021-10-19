@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Box, Text, FlexiBar, Button, FlexiPie, Spacer, Grid, Theme, Switch, DashCard, CardSection} from '../../styledElements/lib';
 
-const Dashboard = props =>{
+const Dashboard = () =>{
     const xData = [ "Completed", "In Progress", "To Do", "Paused" ]
     const yData = [ 
           { val: 4000 }, 
@@ -51,18 +51,7 @@ const Dashboard = props =>{
         { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
         { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
     ];
-    const piedata = [
-        {
-          name: "Page A",
-          uv: 4000,
-          fill: "#fff"
-        },
-        {
-            name: "Page b",
-            uv: 4000,
-            fill: "#fff"
-          }
-      ];
+
       const xpiedata = [ "Overdue", "Within Range"  ]
       const ypiedata = [ 
             { val: 4000 }, 

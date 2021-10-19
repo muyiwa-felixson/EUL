@@ -1,30 +1,18 @@
-import React, {useEffect, useState} from 'react';
-import _ from 'lodash';
+import React, {useState} from 'react';
 import { Box, Button, Grid, Input, Select, Spacer, Table, Text, Theme, DropDown } from '../../styledElements/lib';
 import {ImageBox, PhotoBox} from '../../styledElements/general.style';
 import UserImage from '../../../assets/users.svg';
 import NewUser from './user';
 import Roles from '../../../utils/roles';
-import { getRoles } from 'src/redux/modules/role';
-import { useDispatch, useSelector } from 'react-redux';
-import { recordsToOptions } from 'src/utils';
-import { getUsers } from 'src/redux/modules/user';
 
 const UMS = () => {
 
-    const dispatch = useDispatch();
     const [userModal, setUserModal]= useState(false);
-    const roles = useSelector(({roles}) => roles.results) || [];
-    const users = useSelector(({users}) => users.results) || [];
+    const [selectedRole, setSelectedRole] = useState({label: 'All', value: 'All'});
+    const users = [
 
-    const defaultRole = {value: "all", label: "All"};
-    const [selectedRole, setSelectedRole] = useState(defaultRole);
-    const optionRoles = _.orderBy(recordsToOptions(roles), ['label']);
+    ];
 
-    useEffect(() => {
-        dispatch(getRoles());
-        dispatch(getUsers());
-    }, [])
 
     return <Box>
         <Box height="100px" pad="25px 40px" bordered verticalAlign="flex-end">
@@ -45,10 +33,9 @@ const UMS = () => {
             <Select 
                 label="Role" 
                 spaceTop
-                options={[defaultRole, ...optionRoles]}
+                options={Roles}
                 value={selectedRole}
                 onChange={option => setSelectedRole(option)}
-                defaultValue={defaultRole}
             />
             </Grid>
         </ImageBox>
@@ -102,7 +89,7 @@ const UMS = () => {
             </table>
         </Table>
         </Box>
-        <NewUser show={userModal} setUserModal={setUserModal} roles={optionRoles}/>
+        <NewUser show={userModal} setUserModal={setUserModal} roles={Roles}/>
     </Box>
 }
 
