@@ -12,44 +12,44 @@ const Dashboard = () =>{
     const workflows = ["Device Acquisition", "Metre Distribution", "Distribution Certification","Permit Renewal"];
     const monthData = [ 
         { Complete: 40, "in Progress": 30, paused: 12, "to do": 20 }, 
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 }
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 }
     ];
 
     const monthDataStep = [ 
         { Complete: 40, "in Progress": 30, paused: 12, "to do": 20 }, 
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 }
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 }
     ];
 
     const workflowData = [ 
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 40, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 }
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 40, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 }
     ];
 
     const workflowDataStep = [ 
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
-        { Complete: Math.random(1) * 60, "in Progress": Math.random(1) * 40, paused: Math.random(1) * 40, "to do": Math.random(1) * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
+        { Complete: Math.random() * 60, "in Progress": Math.random() * 40, paused: Math.random() * 40, "to do": Math.random() * 40 },
     ];
 
       const xpiedata = [ "Overdue", "Within Range"  ]
@@ -57,7 +57,7 @@ const Dashboard = () =>{
             { val: 4000 }, 
             { val: 3000 }];
     const [toggle, setToggle] = useState(false);
-    console.log(toggle);
+
     return <Box>
     <Box height="100px" pad="25px 40px" bordered verticalAlign="flex-end">
     <Grid default="auto max-content">
